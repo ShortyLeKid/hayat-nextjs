@@ -23,7 +23,6 @@ const AlbumCard = ({
         <div className='album-player-container'>
             <Link
                 href={isEnabled ? `/player/${slug}` : '#'}
-                // onClick={isEnabled ? () => navigate(`/player/${slug}`) : null}
                 onMouseEnter={handleHover}
                 onMouseLeave={handleHoverOut}
                 className="album-card"
@@ -37,6 +36,7 @@ const AlbumCard = ({
                     </div>
                 </div>
                 <Image
+                    priority
                     alt='ep cover'
                     className='album-card__cover'
                     src={cover}
