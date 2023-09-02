@@ -1,0 +1,8 @@
+@use 'reset';
+@use 'vars';
+
+body {
+    transition: vars.$animationTime ease-in-out;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}

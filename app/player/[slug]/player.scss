@@ -1,0 +1,33 @@
+@use '../../_styles/vars';
+
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .spotify-player {
+        height: 352px;
+        width: 90%;
+        max-width: 700px;
+    }
+
+    .button {
+        position: absolute;
+        top: 79%;
+        font-size: 14px;
+        background-color: #ffffff;
+        padding: 8px;
+        border-radius: 20px;
+        border: 1px solid black;
+        transition: vars.$animationTime ease-in-out;
+        -webkit-box-shadow: -4px 4px 0px -1px #000000;
+        box-shadow: -4px 4px 0px -1px #000000;
+        
+        &:hover {
+            -webkit-box-shadow: -0px 0px 0px -0px #000000;
+            box-shadow: -0px 0px 0px -0px #000000;
+            transform: translate(-2px, 2px);
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@use '../../_styles/vars';
+
+.album-player-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .album-card {
+
+        // border: 1px solid white;
+        outline: 1px solid black;
+        width: 200px;
+        height: 240px;
+        border-radius: 6px;
+        margin: 10px;
+        overflow: hidden;
+        transition: vars.$animationTime ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            -webkit-box-shadow: -8px 8px 0px -1px #000000;
+            box-shadow: -8px 8px 0px -1px #000000;
+            transform: translate(4px, -4px);
+        }
+
+        &__cover {
+            width: 100%;
+            height: auto;
+        }
+
+        &__header {
+            background-color: black;
+            color: white;
+        }
+
+        &__artist {
+            padding: 7px 0px 0px 7px;
+            font-size: 14px;
+        }
+
+        &__title {
+            padding: 7px 0px 7px 7px;
+            font-size: smaller;
+        }
+
+        &__link {
+            width: 200px;
+            height: 240px;
+            position: absolute;
+            pointer-events: none;
+        }
+    }
+}
