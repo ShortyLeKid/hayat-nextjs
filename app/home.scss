@@ -1,5 +1,4 @@
 .home-container {
-    // border: 1px solid rgb(0, 0, 0);
     overflow-y: auto;
     height: 100%;
     position: relative;
@@ -8,7 +7,6 @@
     align-items: center;
 
     &__bio {
-        // border: 1px solid green;
         padding: 20px;
         max-width: 900px;
         margin: 0 auto;
@@ -28,7 +26,6 @@
     }
 
     &__album-list {
-        // border: 1px solid red;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
