@@ -16,7 +16,7 @@ export const GET = async () => {
     } catch (error) {
         console.log(error)
         return NextResponse.json(
-            "Failed to fetch all ablums",
+            "Failed to fetch all albums",
             { status: 500 }
         )
     }
