@@ -4,16 +4,17 @@ import AlbumCard from './_components/AlbumCard'
 import { Skeleton } from '@mui/material'
 import useFetch from '@hooks/useFetch'
 
-
 export default function Home() {
 
 	const [allAlbums, isLoading] = useFetch("/api/albums/all")
+
+	console.log(allAlbums)
 
 	return (
 		<div className='home-container'>
 			<div className='home-container__bio'>
 				<p>
-					"The HAYAT project is a platform of expression that I established as a tribute to my mother. My goal is to release music I personally enjoy, and promote artists I genuinely appreciates.
+					"The HAYAT project is a platform of expression that I established as a tribute to my mother. My goal is to release music I personally enjoy, and promote artists I genuinely appreciate.
 				</p>
 				<p>
 					HAYAT is not about being trendy nor following sophisticated vibes. It's about exploring originality and supporting artists who dare to take a little step aside from the norm.
