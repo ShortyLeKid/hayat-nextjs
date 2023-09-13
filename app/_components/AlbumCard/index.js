@@ -40,6 +40,8 @@ const AlbumCard = ({
                     alt='ep cover'
                     className='album-card__cover'
                     src={cover}
+                    width='1440'
+                    height='1440'
                 />
             </Link>
         </div>
