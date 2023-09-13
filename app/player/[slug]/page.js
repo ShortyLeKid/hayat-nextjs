@@ -4,7 +4,7 @@ import './player.scss';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Skeleton } from "@mui/material";
-import useFetch from "@hooks/useFetch";
+import useFetch from "../../_hooks/useFetch";
 
 
 const Player = () => {
