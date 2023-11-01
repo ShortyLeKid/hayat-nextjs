@@ -4,6 +4,7 @@ import AlbumCard from './_components/AlbumCard'
 import { Skeleton } from '@mui/material'
 import useFetch from './_hooks/useFetch'
 
+
 export default function Home() {
 
 	const [allAlbums, isLoading] = useFetch("/api/albums/all")
